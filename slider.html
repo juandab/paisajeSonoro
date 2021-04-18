@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>San Victorino - Paisaje Sonoro</title>
+
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/mi-slider.css">
+    <link rel="shortcut icon" href="img/indicador.png"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
+
+	<script type="text/javascript"> 
+		$(window).on('load', function() {
+		    $('#slider').nivoSlider(); 
+		}); 
+	</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul><li><a href="index.html">MAPA</a></li></ul>
+            <ul><li><a href="#footer">NOSOTROS</a></li></ul>
+            <ul><li><a href="#">CONTACTO</a></li></ul>
+        </nav>
+    </header>
+	<div class="slider-wrapper theme-mi-slider">
+		<div id="slider" class="nivoSlider">     
+		    <img src="img/slider1.png" alt="" title="#htmlcaption1" />    
+		    <img src="img/slider2.png" alt="" title="#htmlcaption2" />    
+		    <img src="img/slider3.png" alt="" title="#htmlcaption3" />     
+		</div> 
+		<div id="htmlcaption1" class="nivo-html-caption">     
+		    <h1>Bienvenidos</h1>
+		</div>
+		<div id="htmlcaption2" class="nivo-html-caption">     
+		    <h1>Acerca de Nosotros</h1>
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">     
+		    <h1>Gracias por visitar</h1>
+		</div>
+	</div>
+    <div class="audio">
+        <audio src="audio/paisaje-sonoro-el-mercado.mp3" preload="play" controls></audio>
+    </div>
+    <footer id="footer">
+        <div class="part1">
+        <h2>INTEGRANTES</h2>
+        <p>1 - Organizadores</p>
+        <p>2 - Musicos</p>
+        <p>3 - Programadores</p>
+        <p>4 - Diseñadores</p>
+        </div>
+        <div class="part2"> 
+        <h2>NOMBRES</h2>
+        <p>Nombre</p>
+        <p>Nombre</p>
+        <p>Nombre</p>
+        <p>Nombre</p>
+        </div>
+    </footer>
+</body>
+</html>

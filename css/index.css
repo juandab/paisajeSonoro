@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 15px ;
+    text-align: center;
+    background-color: #000;
+}
+
+header ul {
+    display: inline-block;
+    list-style: none;
+}
+header ul li a {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+h1 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.map{
+    position: relative;
+    display: inline-block;
+    border: solid 2px #2c2c2c;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.map .mapa {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.map .señal {
+    position: absolute;
+    top: 16%;
+    left: 40%;
+    transition: 1s;
+    width: 70px;
+    height: auto;
+}
+.map .señal:hover {
+    transform: translateY(4px);
+}
+.map .señal2 {
+    position: absolute;
+    top: 14%;
+    left: 61%;
+    transition: 1s;
+    width: 60px;
+    height: auto;
+}
+.description {
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+}
+.description .señal {
+    vertical-align: middle;
+    border: 2px solid #8CFF1A;
+    display: inline-block;
+    padding: 5px;
+    width: 50px;
+    height: auto;
+}
+.description .señal2 {
+    margin-top: 20px;
+    vertical-align: middle;
+    border: 2px solid #8CFF1A;
+    display: inline-block;
+    padding: 5px;
+    width: 50px;
+    height: auto;
+}
+.description ul {
+    display: inline-block;
+}
+.description ul li {
+    list-style: none;
+}
+.presentacion {
+    background-color: #8f8f8f;
+    margin: auto;
+    text-align: justify;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 60px;
+    border-top: 2px solid #000;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+footer{
+    padding-top: 20px;
+    margin-top:20px;
+    font-size: 12px;
+    text-align: center;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: #c2c2c2;
+}
+footer .part1 {
+    display: inline-block;
+    margin-right: 80px;
+}
+footer .part2 {
+    display: inline-block;
+}
