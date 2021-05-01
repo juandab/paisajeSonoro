@@ -125,12 +125,15 @@ header ul li a {
 }
 .audio{
 	padding: 10px 0 ;
-	background-color: #000;
     text-align: center;
+}
+.audio  p {
+	font-family: 'Roboto', sans-serif;
 }
 footer{
     padding-top: 20px;
     margin-top:20px;
+	padding-bottom: 20px;
     font-size: 12px;
     text-align: center;
     background-color: black;

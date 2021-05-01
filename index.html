@@ -1,59 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sounds The Wood</title>
-    <link rel="shortcut icon" href="img/indicador.png"/>
+    <link rel="shortcut icon" href="img/indicador.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <ul><li><a href="index.html">MAPA</a></li></ul>
-            <ul><li><a href="#presentacion">NOSOTROS</a></li></ul>
-            <ul><li><a href="#footer">CONTACTO</a></li></ul>
+            <ul>
+                <li><a href="index.html">MAPA</a></li>
+            </ul>
+            <ul>
+                <li><a href="#presentacion">NOSOTROS</a></li>
+            </ul>
+            <ul>
+                <li><a href="#footer">CONTACTO</a></li>
+            </ul>
         </nav>
     </header>
     <h1>SAN VICTORINO - PAISAJE SONORO</h1>
-    <article class="map">
-        <a href="slider.html"><img  class="señal" src="img/localizador.png" alt="Centro Comercial"></a>
-        <a href="slider2.html"><img  class="señal2" src="img/indicador.png" alt="Centro Comercial"></a>
-        <img class="mapa" src="img/mapa.png" alt="">
-    </article>
+
+    <!-- <div data-key="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"
+        data-zoom="10"
+        role="map"
+        class="gmaps">
+    <div
+        data-id="san victorino"
+        data-lat ="4.6019163105637855"
+        data-lng ="-74.07839655898347"
+        class="market">
+    <div class="market-card">
+        <h2>San Victorino - Bogota</h2>
+    </div>
+    </div>
+    </div> -->
+
+    <div id="map"></div>
+     <script src="js/script.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
     <div class="description">
-        <img  class="señal" src="img/localizador.png" alt="Centro Comercial">
-        <ul><li>San Victorino 1099 Cra. 13</li></ul>
+        <img class="señal" src="img/localizador.png" alt="Centro Comercial">
+        <ul>
+            <li>San Victorino 1099 Cra. 13</li>
+        </ul>
         <br>
-        <img  class="señal2" src="img/indicador.png" alt="Centro Comercial">
-        <ul><li>Parque de las mariposas</li></ul>
+        <img class="señal2" src="img/indicador.png" alt="Centro Comercial">
+        <ul>
+            <li>Parque de las mariposas</li>
+        </ul>
     </div>
     <article class="presentacion" id="presentacion">
         <h2>Descripción</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quo error quod tempore
-            voluptatibus, quos alias nobis excepturi mollitia doloribus magni soluta aut fugiat? 
-            Consequuntur suscipit amet illo consectetur odio Lorem ipsum dolor sit amet consectetur 
+            voluptatibus, quos alias nobis excepturi mollitia doloribus magni soluta aut fugiat?
+            Consequuntur suscipit amet illo consectetur odio Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Quidem, saepe? Fugiat, consectetur velit deleniti ipsam ratione cum
-             temporibus, explicabo nihil totam tempora dolorum optio ipsa soluta odio. Tenetur, ipsum quibusdam.</p>
+            temporibus, explicabo nihil totam tempora dolorum optio ipsa soluta odio. Tenetur, ipsum quibusdam.</p>
     </article>
-    <footer id="footer">
-        <div class="part1">
-        <h2>INTEGRANTES</h2>
-        <p>1 - Organizadores</p>
-        <p>2 - Musicos</p>
-        <p>3 - Programadores</p>
-        <p>4 - Diseñadores</p>
+    <div class="block">
+        <div class="class">
+            <ul>
+                <li><a href="#">Localización</a></li><img src="img/localizador.png" alt="">
+            </ul>
+            <ul>
+                <li><a href="#">Localización</a></li><img src="img/indicador.png" alt="">
+            </ul>
+            <ul>
+                <li><a href="#">Localización</a></li><img src="img/localizador.png" alt="">
+            </ul>
         </div>
-        <div class="part2"> 
-        <h2>INTEGRANTES</h2>
-        <p>Nombre</p>
-        <p>Nombre</p>
-        <p>Nombre</p>
-        <p>Nombre</p>
+    </div>
+    <!-- <input type="button" value="ver ventana" onclick="pop()"> -->
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <div class="center">
+        <input type="checkbox" id="click">
+        <div class="content">
+            <div class="header">
+                <h2>Modal Popup</h2>
+                <label for="click" class="fas fa-times"></label>
+            </div>
+            <label for="click" class="fas fa-check"></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nihil, voluptatibus quis dolores porro omnis non modi vero corrupti ullam, sint!</p>
+                <div class="line"></div>
+                <label for="click" class="close-btn">Close</label>    
+        </div> -->
+
+    </div>
+
+    <footer id="footer">
+        <div class="part2">
+            <h2>INTEGRANTES</h2>
+            <p>Nombre</p>
+            <p>Nombre</p>
+            <p>Nombre</p>
+            <p>Nombre</p>
         </div>
     </footer>
 </body>
+<script type="text/javascript">
+
+</script>
+
 </html>

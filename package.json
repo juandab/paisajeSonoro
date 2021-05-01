@@ -1,0 +1,22 @@
+{
+  "name": "install",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandab/paisajeSonoro.git"
+  },
+  "author": "Juan Rubio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juandab/paisajeSonoro/issues"
+  },
+  "homepage": "https://github.com/juandab/paisajeSonoro#readme",
+  "devDependencies": {
+    "jquery-gmaps": "^1.0.41"
+  }
+}
