@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +8,10 @@
     <link rel="shortcut icon" href="img/indicador.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -25,10 +24,13 @@
             <ul>
                 <li><a href="#footer">CONTACTO</a></li>
             </ul>
+            <img class="mariposa" src="img/mariposa2.png" alt="">
         </nav>
+        
     </header>
-    <h1>SAN VICTORINO - PAISAJE SONORO</h1>
-
+    <div class="block_color">
+        <h1>SAN VICTORINO - SUENA Y RE-SUENA</h1>
+    </div>
     <!-- <div data-key="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"
         data-zoom="10"
         role="map"
@@ -43,11 +45,10 @@
     </div>
     </div>
     </div> -->
-
     <div id="map"></div>
-     <script src="js/script.js"></script> -->
+     <script src="js/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-    <div class="description">
+    <!-- <div class="description">
         <img class="señal" src="img/localizador.png" alt="Centro Comercial">
         <ul>
             <li>San Victorino 1099 Cra. 13</li>
@@ -57,15 +58,18 @@
         <ul>
             <li>Parque de las mariposas</li>
         </ul>
+    </div> -->
+    <div class="fondo">
+        <article class="presentacion" id="presentacion">
+            <img src="img/git.gif" alt="gif">
+            <p>La dimensión acústica de San Victorino es un diverso mundo de susurros y gritos callejeros que nos brinda el centro capitalino,
+                 pues convergen diferentes actores sonoros de todo tipo. Los transeúntes,
+                 comerciantes, el trafico y el transporte masivo, la música que se escucha en los locales comerciales, 
+                 cumplen un papel sonoro fundamental.
+                </p>
+                <button id="reproducir">Repro</button>
+        </article>
     </div>
-    <article class="presentacion" id="presentacion">
-        <h2>Descripción</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quo error quod tempore
-            voluptatibus, quos alias nobis excepturi mollitia doloribus magni soluta aut fugiat?
-            Consequuntur suscipit amet illo consectetur odio Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, saepe? Fugiat, consectetur velit deleniti ipsam ratione cum
-            temporibus, explicabo nihil totam tempora dolorum optio ipsa soluta odio. Tenetur, ipsum quibusdam.</p>
-    </article>
     <div class="block">
         <div class="class">
             <ul>
@@ -93,9 +97,7 @@
                 <div class="line"></div>
                 <label for="click" class="close-btn">Close</label>    
         </div> -->
-
     </div>
-
     <footer id="footer">
         <div class="part2">
             <h2>INTEGRANTES</h2>
@@ -107,7 +109,5 @@
     </footer>
 </body>
 <script type="text/javascript">
-
 </script>
-
 </html>
