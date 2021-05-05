@@ -61,14 +61,20 @@
     </div> -->
     <div class="fondo">
         <article class="presentacion" id="presentacion">
-            <img src="img/git.gif" alt="gif">
+            <img class="gif1" src="img/git.gif" alt="gif" id="animado">
             <p>La dimensión acústica de San Victorino es un diverso mundo de susurros y gritos callejeros que nos brinda el centro capitalino,
                  pues convergen diferentes actores sonoros de todo tipo. Los transeúntes,
                  comerciantes, el trafico y el transporte masivo, la música que se escucha en los locales comerciales, 
                  cumplen un papel sonoro fundamental.
                 </p>
-                <audio src="audio/Calle 13.mp3" preload="none" controls></audio>
-                <button id="reproducir">Repro</button>
+                <div class="musica icon_h2 " id="enviar" onmousedown="sonido.play()">
+                        <img  class="img2 rainbow-button2" src="img/icons/musica2.png" alt="">
+                        <img class="img3 rainbow-button" src="img/icons/play3.png" alt="">
+                </div>
+                <script>
+                    var sonido = new Audio();
+                    sonido.src = "audio/Calle13.mp3";
+                </script>
         </article>
     </div>
     <div class="block">

@@ -1,4 +1,20 @@
 
+// window.addEventListener('scroll', function(){
+//   let animacion = document.getElementById('animado');
+//   let posicionObj1 = animacion.getBoundingClientRect().top;
+//   console.log(posicionObj1)
+//   let tamañoDePantalla = window.innerHeight/3;
+//   if (posicionObj1 < tamañoDePantalla) {
+//     animacion.style.animation = 'mover 1s ease-out';
+//   }
+// });
+window.addEventListener('click', function(){
+  let play = document.getElementById('reproducir');
+  if(play = true){
+
+  }
+});
+
 function iniciarMap(){
     var coord = {lat:4.6019163105637855 ,lng: -74.07839655898347};
     var map = new google.maps.Map(document.getElementById('map'),{
@@ -26,18 +42,4 @@ function iniciarMap(){
       map: map 
     })
 };
-  
-var reproductor = document.getElementById("reproducir");
-reproducir.addEventListener('click',presionar,false);
-function presionar(){
-  if (!medio.paused && !medio.ended) {
-    medio.paused();
-    reproducir.innerHTML='Reproducir';
-    window.clearInterval(bucle);
-  }else{
-    medio.play();
-    reproducir.innerHTML='Pausa';
-    bucle.setInterval(estado, 1000);
-  }
 
-};

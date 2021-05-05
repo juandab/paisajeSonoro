@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Krona One', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 header {
     margin: auto;
     top: 0;
@@ -13,7 +16,7 @@ header {
     position: fixed;
     width: 98%;
     z-index: 200;
-    padding: 7px 1% 0 4%;
+    padding: 3px 1% 0 4%;
     font-size: 1.2em;
     /* background: rgba(100,201,103,1);
     background: -moz-linear-gradient(top, rgba(100,201,103,1) 0%, rgba(12,135,24,1) 100%);
@@ -27,9 +30,8 @@ header {
 }
 
 header ul {
-    
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     display: inline-block;
     list-style: none;
 }
@@ -63,11 +65,11 @@ header ul li a:hover {
 }
 h1 {
     color: #fff;
-    padding-top: 60px;
+    padding-top: 70px;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
     text-align: center;
 }
 #map{
@@ -108,10 +110,16 @@ h1 {
 .presentacion audio {
     margin-top: 30px;
 }
+@keyframes mover {
+    0% {
+        transform: translate(100%);
+    }
+}
 .fondo {
+    position: relative;
     height: 800px;
     padding-top: 5px;
-    background-color: #2131BB;
+    background-color: #2231BA;
 }
 .presentacion {
     text-align: center;
@@ -123,7 +131,7 @@ h1 {
 .presentacion h2 {
     padding-top: 50px;
 }
-.presentacion img  {
+.presentacion .gif1 {
     box-shadow: 30px 10px rgba(0, 0, 0, .5);
     transition: 1s;
     margin-top: 30px;
@@ -131,11 +139,106 @@ h1 {
     height: auto;
     /* opacity: 0.8; */
 }
-.presentacion img:hover { 
+.presentacion .gif1:hover { 
     /* transform: skewY(10deg) translateY(20px); */
     transform: scaleY(1) translateY(10px);
     /* transform: rotate3d(1, 0, 0, 5deg); */
 }
+.presentacion .musica {
+    position: absolute;
+    top: 52%;
+    right: 52%;
+}
+.presentacion .img2 {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    top: 0%;
+    width: 40px;
+    height: auto;
+}
+.presentacion .img2:hover {
+    display: none;
+}
+.presentacion .img3 {
+    border-radius: 30px;
+    transition: 1s;
+    opacity: 0.0;
+    padding: 5px 5px 5px 5px;
+    top: 0%;
+    position: absolute;
+    width: 40px;
+    height: auto;
+}
+.presentacion .img3:hover {
+    background-color: #fff;
+    opacity: 1;
+}
+/* presentacion de boton  */
+.rainbow-button {
+    width:calc(20vw + 6px);
+    height:calc(8vw + 6px);
+    background-image: linear-gradient(90deg, #2231BA 0%, #DE0421 49%, #F5B507 80%, #04DE13 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:3vw;
+    font-weight:bold;
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:20vw;
+    height:8vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 4s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+/* presentacion de boton  */
+/* presentacion de boton2 */
+.rainbow-button2 {
+    width:calc(20vw + 6px);
+    height:calc(8vw + 6px);
+    background-image: linear-gradient(90deg, #2231BA 0%, #ffff 49%, #ffff 80%, #055BFA 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:3vw;
+    font-weight:bold;
+  }
+  .rainbow-button2:after {
+    content:attr(alt);
+    width:20vw;
+    height:8vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button2 {
+    animation:slidebg 4s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+/* presentacion de boton2 */
 
 .presentacion p {
     margin-top: 50px;
