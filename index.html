@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sounds The Wood</title>
-    <link rel="shortcut icon" href="img/indicador.png" />
+    <link rel="shortcut icon" href="img/indicador.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -29,54 +27,125 @@
         
     </header>
     <div class="block_color">
-        <h1>SAN VICTORINO - SUENA Y RE-SUENA</h1>
+        <div>
+            <h2 class="titulo">COLECTIVO ARTISTICO INTERDISCIPLINAR
+                “CUCHAVIRA”</h2>
+                <p class="subtitulo">Propuesta Sonora
+                    San Victorino Suena
+                    Y Re-Suena
+                    BOGOTÁ 2021</p>
+            <p>BECA PLÁSTICA SONORA
+                PROGRAMA DISTRITAL DE ESTIMULOS PDE-2021
+                
+                </p>
+                <img src="img/icons/musica2.png" alt="">
+                <h1>SAN VICTORINO - SUENA Y RE-SUENA</h1>
+                <p>Cuchavira es un colectivo de artistas colombianos residentes en la ciudad Bogotá, 
+                    convocados por movilizar el cuerpo, activar la escucha, visibilizar las nuevas dinámicas de vida 
+                a las que nos enfrentamos en la actualidad, las transformaciones del espacio púbico en nuestra ciudad y reactivar nuestras practicas artísticas desde nuestras áreas de conocimiento son nuestra motivación para dar vida a esta propuesta.               </p>
+                <a href="#parrafos">▼</a>
+        </div>
     </div>
-    <!-- <div data-key="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"
-        data-zoom="10"
-        role="map"
-        class="gmaps">
-    <div
-        data-id="san victorino"
-        data-lat ="4.6019163105637855"
-        data-lng ="-74.07839655898347"
-        class="market">
-    <div class="market-card">
-        <h2>San Victorino - Bogota</h2>
-    </div>
-    </div>
-    </div> -->
-    <div id="map"></div>
-     <script src="js/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-    <!-- <div class="description">
-        <img class="señal" src="img/localizador.png" alt="Centro Comercial">
-        <ul>
-            <li>San Victorino 1099 Cra. 13</li>
-        </ul>
-        <br>
-        <img class="señal2" src="img/indicador.png" alt="Centro Comercial">
-        <ul>
-            <li>Parque de las mariposas</li>
-        </ul>
-    </div> -->
-    <div class="fondo">
+    <article id="parrafos" class="content-2">
+        
+        <p class="parrafo-1">Nos dimos a la tarea de registrar e indagar entorno a la “nueva normalidad” que enfrenta 
+            San Victorino. Reconocer su dimensión acústica y los lenguajes sonoros que allí se desarrollan 
+            en un ambiente comercial muy concurrido de trabajo, rebusque en la capital.
+        </p>
+        
+        <p class="parrafo-2">Este trabajo es un homenaje a vendedores informales, población flotante y comerciantes del 
+            sector quienes se han visto gravemente afectados por las transformaciones que ha traído la 
+            pandemia mundial y las dificultades sociales acrecentadas en nuestra sociedad.
+        </p>
+        <a href="#fondo">▼</a>
+    </article>
+    <div id="fondo" class="fondo">
         <article class="presentacion" id="presentacion">
             <img class="gif1" src="img/git.gif" alt="gif" id="animado">
+            <audio id="audio">
+                <source src="audio/Calle13.mp3" type="audio/mpeg">
+            </audio>
+            <div class="reproductores">    
+                <button id="playPauseBTN" onclick="playPause()">Play &#9658;</button>
+                &nbsp;
+                &nbsp;
+                <button onclick="stop()">Stop &#9611;</button>
+            </div>
+            <h1>Plaza San Victorino</h1>
+            <p>La plaza de San Victornio antes las galerias Antonio Nariño no cambió la vocación comercial del sector; 
+                por el contrario, permitió la revitalización del mismo en conjunto con el nuevo parque Tercer Milenio.</p>
+
+        </article>
+    </div>
+    <div id="fondo" class="fondo">
+        <article class="presentacion" id="presentacion">
+            <img class="gif1" src="img/gif3.gif" alt="gif" id="animado">
+            <audio id="audio2">
+                <source src="audio/SKATE PARK.mp3" type="audio/mpeg">
+            </audio>
+            <div class="reproductores">  
+                <button id="playPauseBTN2" onclick="playPause2()">Play &#9658;</button>
+                &nbsp;
+                &nbsp;
+                <button onclick="stop2()">Stop &#9611;</button>
+            </div>
+            <h1>Parque Metropolitano - Tercer Milenio</h1>
+            <p>Tal vez la intervención social y arquitectónica más relevante de los últimos tiempos en el sector 
+                fue el parque metropolitano Tercer Milenio.
+                Encontramos un San Victorino intervenido por el establecimiento, vigilado y con cerramiento un lugar 
+                con un umbral sonoro muy diferente (tenue) respecto al resto del sector, sin basura, con mayor presencia
+                 de vida silvestre y flora. Un pulmón del sector con una dinámica funcional muy distinta a lo que sucedía 
+                 en ese lugar hacer un par de décadas, desde aquí empezó nuestra indagación sonora.</p>
+        </article>
+    </div>
+
+    <div class="fondo">
+        <article class="presentacion" id="presentacion">
+            <img class="gif2" src="img/gif2.gif" alt="gif" id="animado">
+            
+            
+            <audio id="audio3">
+                <source src="audio/cra10-10min.mp3" type="audio/mpeg">
+            </audio>
+            <div class="reproductores">  
+                <button id="playPauseBTN3" onclick="playPause3()">Play &#9658;</button>
+                &nbsp;
+                &nbsp;
+                <button onclick="stop3()">Stop &#9611;</button>
+            </div>
+            <h1>Comerciantes</h1>
             <p>La dimensión acústica de San Victorino es un diverso mundo de susurros y gritos callejeros que nos brinda el centro capitalino,
                  pues convergen diferentes actores sonoros de todo tipo. Los transeúntes,
                  comerciantes, el trafico y el transporte masivo, la música que se escucha en los locales comerciales, 
                  cumplen un papel sonoro fundamental.
                 </p>
-                <div class="musica icon_h2 " id="enviar" onmousedown="sonido.play()">
-                        <img  class="img2 rainbow-button2" src="img/icons/musica2.png" alt="">
-                        <img class="img3 rainbow-button" src="img/icons/play3.png" alt="">
-                </div>
-                <script>
-                    var sonido = new Audio();
-                    sonido.src = "audio/Calle13.mp3";
-                </script>
         </article>
     </div>
+    <div id="fondo" class="fondo">
+        <article class="presentacion" id="presentacion">
+            <img class="gif1" src="img/gif4.gif" alt="gif" id="animado">
+            <audio id="audio4">
+                <source src="audio/LIBRERIAS.mp3" type="audio/mpeg">
+            </audio>
+            <div class="reproductores">  
+                <button id="playPauseBTN4" onclick="playPause4()">Play &#9658;</button>
+                &nbsp;
+                &nbsp;
+                <button onclick="stop4()">Stop &#9611;</button>
+            </div>
+            <h1>LIBRERIAS, ROPA, CALZADO Y TEXTILES</h1>
+            <p> 
+                San Victorino se caracteriza por tener un mercado popular donde se puede encontrar desde papelerías, cacharrerías,
+                almacenes de ropa, calzado y textiles, hasta la venta de libros de segunda mano, en casetas que llevan 
+                funcionando muchos años, y de útiles escolares a un precio económico, en otros locales cercanos a la plaza.
+            </p>
+        </article>
+    </div>
+    
+    <div id="map"></div>
+    <!-- API KEY = AIzaSyDwku3EESKWH1M2Jh4DOUZwl48aGrt6UWo -->
+     <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=iniciarMap"></script>
     <div class="block">
         <div class="class">
             <ul>
@@ -90,29 +159,12 @@
             </ul>
         </div>
     </div>
-    <!-- <input type="button" value="ver ventana" onclick="pop()"> -->
-    <!-- <script src="js/script.js"></script> -->
-    <!-- <div class="center">
-        <input type="checkbox" id="click">
-        <div class="content">
-            <div class="header">
-                <h2>Modal Popup</h2>
-                <label for="click" class="fas fa-times"></label>
-            </div>
-            <label for="click" class="fas fa-check"></label>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nihil, voluptatibus quis dolores porro omnis non modi vero corrupti ullam, sint!</p>
-                <div class="line"></div>
-                <label for="click" class="close-btn">Close</label>    
-        </div> -->
     </div>
     <footer id="footer">
         <div class="part2">
-            <h2>INTEGRANTES</h2>
-            <p>Nombre</p>
-            <p>Nombre</p>
-            <p>Nombre</p>
-            <p>Nombre</p>
+            <p>© 2021 San Victorino - Suena Y Resuena. Creative Commons</p>
         </div>
+        <p></p>
     </footer>
 </body>
 <script type="text/javascript">
