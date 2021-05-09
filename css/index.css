@@ -99,7 +99,7 @@ header ul li a:hover {
 }
 @media screen and (max-width: 1245px){
     .block_color .titulo{
-        color: red;
+        /* color: red; */
     }
 }
 /* ---------------texto Descriptivo---------------- */
@@ -206,7 +206,7 @@ h1 {
     padding-top: 50px;
 }
 .presentacion .gif1 {
-    box-shadow: 10px 5px rgba(0, 0, 0, .2);
+    box-shadow: 1px 5px rgba(0, 0, 0, .2);
     transition: 1s;
     margin-top: 30px;
     width: 55%;
@@ -390,4 +390,11 @@ footer .part2 p{
     border-radius: 5px;
     border: 0px;
     height: 60px;
+}
+
+.vista {
+    display: none;
+}
+.vista2 {
+    display: block;
 }

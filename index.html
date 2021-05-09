@@ -14,10 +14,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">MAPA</a></li>
+                <li><a href="#fondo">NOSOTROS</a></li>
             </ul>
             <ul>
-                <li><a href="#presentacion">NOSOTROS</a></li>
+                <li><a href="#map">MAPA</a></li>
             </ul>
             <ul>
                 <li><a href="#footer">CONTACTO</a></li>
@@ -141,25 +141,102 @@
             </p>
         </article>
     </div>
-    
+    <div id="fondo" class="fondo">
+        <article class="presentacion" id="presentacion">
+            <img class="gif1" src="img/git5.gif" alt="gif" id="animado">
+            <audio id="audio5">
+                <source src="audio/CRA 12.mp3" type="audio/mpeg">
+            </audio>
+            <div class="reproductores">  
+                <button id="playPauseBTN5" onclick="playPause5()">Play &#9658;</button>
+                &nbsp;
+                &nbsp;
+                <button onclick="stop5()">Stop &#9611;</button>
+            </div>
+            <h1>JUGUETES-FESTJO Y MÁS</h1>
+            <p> 
+                San Victorino ofrece variedad de juguetes, artículos para el festejo, artículos escolares y otros.
+                 En la actualidad el sector mantiene su vocación comercial por excelencia de las clases populares y su ubicación estratégica 
+                 en la ciudad
+            </p>
+        </article>
+    </div>
+    <!-- REPRODUCTOR CLL13 -->
+    <audio id="audio6">
+        <source src="audio/CRA10 - CLL13 MEDIODIA.mp3" type="audio/mpeg">
+    </audio>
+    <div class="reproductores vista">  
+        <button id="playPauseBTN6" onclick="playPause6()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button onclick="stop6()">Stop &#9611;</button>
+    </div>
+    <!-- REPRODUCTOR CRA 12 -->
+    <audio id="audio7">
+        <source src="audio/CRA 12.mp3" type="audio/mpeg">
+    </audio>
+    <div class="reproductores vista">  
+        <button id="playPauseBTN7" onclick="playPause7()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button onclick="stop7()">Stop &#9611;</button>
+    </div>
+    <!-------------- REPRODUCTOR CLL 12B ---------------->
+    <audio id="audio8">
+        <source src="audio/CLL 12B.mp3" type="audio/mpeg">
+    </audio>
+    <div class="reproductores vista">  
+        <button id="playPauseBTN8" onclick="playPause8()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button onclick="stop8()">Stop &#9611;</button>
+    </div>
+    <!----------- REPRODUCTOR CALLE9 NOCTURNA -------------->
+    <audio id="audio9">
+        <source src="audio/CALLE9 NOCTURNA.mp3" type="audio/mpeg">
+    </audio>
+    <div class="reproductores vista">  
+        <button id="playPauseBTN9" onclick="playPause9()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button onclick="stop9()">Stop &#9611;</button>
+    </div>
+    <!----------- REPRODUCTOR ENCERRADOS NO -------------->
+    <audio id="audio10">
+        <source src="audio/ENCERRADOS NO.mp3" type="audio/mpeg">
+    </audio>
+    <div class="reproductores vista">  
+        <button id="playPauseBTN10" onclick="playPause10()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button onclick="stop10()">Stop &#9611;</button>
+    </div>
+    <!----------- REPRODUCTOR CRA 11 - CLL 10 -------------->
+    <audio id="audio11">
+        <source src="audio/CRA 11 - CLL 11.mp3" type="audio/mpeg">
+    </audio>
+    <div class="reproductores vista">  
+        <button id="playPauseBTN11" onclick="playPause11()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button onclick="stop11()">Stop &#9611;</button>
+    </div>
+    <!----------- REPRODUCTOR QUEREMOS TRABAJAR -------------->
+    <audio id="audio12">
+        <source src="audio/MARIPOSA MARCHA.mp3" type="audio/mpeg">
+    </audio>
+    <div class="reproductores vista">  
+        <button id="playPauseBTN12" onclick="playPause12()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button onclick="stop12()">Stop &#9611;</button>
+    </div>
     <div id="map"></div>
     <!-- API KEY = AIzaSyDwku3EESKWH1M2Jh4DOUZwl48aGrt6UWo -->
      <script src="js/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=iniciarMap"></script>
-    <div class="block">
-        <div class="class">
-            <ul>
-                <li><a href="#">Localización</a></li><img src="img/localizador.png" alt="">
-            </ul>
-            <ul>
-                <li><a href="#">Localización</a></li><img src="img/indicador.png" alt="">
-            </ul>
-            <ul>
-                <li><a href="#">Localización</a></li><img src="img/localizador.png" alt="">
-            </ul>
-        </div>
-    </div>
-    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwku3EESKWH1M2Jh4DOUZwl48aGrt6UWo&callback=iniciarMap"></script>
+    
+    
     <footer id="footer">
         <div class="part2">
             <p>© 2021 San Victorino - Suena Y Resuena. Creative Commons</p>
