@@ -472,4 +472,8 @@ footer .part2 p{
         width: 0;
         height: 0;
     }
+    .reproductores button {
+        min-width: 200px;
+
+    }
 }
