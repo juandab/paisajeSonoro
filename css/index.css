@@ -476,4 +476,8 @@ footer .part2 p{
         min-width: 200px;
 
     }
+    .presentacion p {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
