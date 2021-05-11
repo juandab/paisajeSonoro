@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sounds The Wood</title>
-    <link rel="shortcut icon" href="img/indicador.png"/>
+    <title>Paisaje Sonoro - San Victorino</title>
+    <link rel="shortcut icon" href="img/icons/musica.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#fondo">NOSOTROS</a></li>
-            </ul>
-            <ul>
-                <li><a href="#map">MAPA</a></li>
-            </ul>
-            <ul>
-                <li><a href="#footer">CONTACTO</a></li>
-            </ul>
-            <img class="mariposa" src="img/mariposa2.png" alt="">
-        </nav>
-        
-    </header>
+        <span id="burguer-buttom" class=" burguer-buttom icon-menu"></span>
+            <nav class="menu" id="menu"><!-- menu -->
+                <ul>
+                    <li>
+                        <a href="index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#map">MAPA</a>
+                    </li>
+                    <li>
+                        <a href="#footer">NOSOTROS</a>
+                    </li>
+                </ul>
+                <img src="img/mariposa2.png" alt="">
+            </nav>
+            
+        </header>
     <div class="block_color">
         <div>
             <h2 class="titulo">COLECTIVO ARTISTICO INTERDISCIPLINAR
@@ -62,10 +65,11 @@
     <div id="fondo" class="fondo">
         <article class="presentacion" id="presentacion">
             <img class="gif1" src="img/git.gif" alt="gif" id="animado">
+            <audio src="audio/Calle13.mp3" preload="none" controls></audio>
             <audio id="audio">
                 <source src="audio/Calle13.mp3" type="audio/mpeg">
             </audio>
-            <div class="reproductores">    
+            <div class="reproductores vista">    
                 <button id="playPauseBTN" onclick="playPause()">Play &#9658;</button>
                 &nbsp;
                 &nbsp;
@@ -80,10 +84,11 @@
     <div id="fondo" class="fondo">
         <article class="presentacion" id="presentacion">
             <img class="gif1" src="img/gif3.gif" alt="gif" id="animado">
+            <audio src="audio/SKATE PARK.mp3" preload="none" controls></audio>
             <audio id="audio2">
                 <source src="audio/SKATE PARK.mp3" type="audio/mpeg">
             </audio>
-            <div class="reproductores">  
+            <div class="reproductores vista">  
                 <button id="playPauseBTN2" onclick="playPause2()">Play &#9658;</button>
                 &nbsp;
                 &nbsp;
@@ -102,12 +107,12 @@
     <div class="fondo">
         <article class="presentacion" id="presentacion">
             <img class="gif2" src="img/gif2.gif" alt="gif" id="animado">
-            
+            <audio src="audio/cra10-10min.mp3" preload="none" controls></audio>
             
             <audio id="audio3">
                 <source src="audio/cra10-10min.mp3" type="audio/mpeg">
             </audio>
-            <div class="reproductores">  
+            <div class="reproductores vista">  
                 <button id="playPauseBTN3" onclick="playPause3()">Play &#9658;</button>
                 &nbsp;
                 &nbsp;
@@ -124,10 +129,11 @@
     <div id="fondo" class="fondo">
         <article class="presentacion" id="presentacion">
             <img class="gif1" src="img/gif4.gif" alt="gif" id="animado">
+            <audio src="audio/LIBRERIAS.mp3" preload="none" controls></audio>
             <audio id="audio4">
                 <source src="audio/LIBRERIAS.mp3" type="audio/mpeg">
             </audio>
-            <div class="reproductores">  
+            <div class="reproductores vista">  
                 <button id="playPauseBTN4" onclick="playPause4()">Play &#9658;</button>
                 &nbsp;
                 &nbsp;
@@ -144,10 +150,11 @@
     <div id="fondo" class="fondo">
         <article class="presentacion" id="presentacion">
             <img class="gif1" src="img/git5.gif" alt="gif" id="animado">
+            <audio src="audio/CRA 12.mp3" preload="none" controls></audio>
             <audio id="audio5">
                 <source src="audio/CRA 12.mp3" type="audio/mpeg">
             </audio>
-            <div class="reproductores">  
+            <div class="reproductores vista">  
                 <button id="playPauseBTN5" onclick="playPause5()">Play &#9658;</button>
                 &nbsp;
                 &nbsp;
@@ -239,7 +246,7 @@
     
     <footer id="footer">
         <div class="part2">
-            <p>© 2021 San Victorino - Suena Y Resuena. Creative Commons</p>
+            <p>© 2021 San Victorino - Suena Y Resuena. - EMAIL: artescuchavira@gmail.com </p>
         </div>
         <p></p>
     </footer>

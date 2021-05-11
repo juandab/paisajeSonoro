@@ -1,3 +1,29 @@
+var consulta = window.matchMedia('(max-width: 500px)')
+consulta.addListener(mediaQuery)
+
+var $burguerButtom = document.getElementById('burguer-buttom');
+var $menu = document.getElementById('menu');
+function toggleMenu(){
+    $menu.classList.toggle('active')
+};
+function showMenu(){
+    $menu.classList.add('active')
+};
+function hideMenu(){
+    $menu.classList.remove('active')
+};
+
+function mediaQuery(){
+    if (consulta.matches){
+  console.log('se cumple la condicion')
+  $burguerButtom.addEventListener('touchstart', toggleMenu)
+
+  }else {
+    console.log('No se cumple la condicion')
+    $burguerButtom.removeEventListener('touchstart', toggleMenu)
+  }
+};
+
 
 function iniciarMap(){
     var coord = {lat:4.6019163105637855 ,lng: -74.07839655898347};
