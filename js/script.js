@@ -124,8 +124,8 @@ var markerFive = {lat:4.601480,lng:-74.078468};
     title:"BOGOTA COLOMBIA - SAN VICTORINO - CLL 12B"
   });
 
-  var texto5 = '<h1>San Victorino - CLL 12B</h1>'
-  +'<h2 id="title2">San Victorino 12B</h2> '
+  var texto5 = '<h1>San Victorino - CLL 12</h1>'
+  +'<h2 id="title2">¡Siga, Bienvenido!</h2> '
   +'<p>Galletas chocolates a la orden, lo que es camiseta lacos, a la orden, siga, a la orden, ¿Qué libro busca?, Bodega de Jeanes, camisas, chaquetas, ¡Joven se le puede colaborar, pregunte!</p>' 
   + '<audio id="audio8"><source src="audio/" type="audio/mpeg"></audio>'
   +  '<div class="reproductores vista2"><button id="playPauseBTN8" onclick="playPause8()">Play &#9658;</button>&nbsp;&nbsp;<button onclick="stop8()">Stop &#9611;</button></div>'
@@ -160,7 +160,7 @@ marker6.addListener('click', function () {
 });
 // MARCADOR 7 CLL 9
 
-var markerSeven = {lat:4.599794,lng:-74.081816};
+var markerSeven = {lat:4.59957812451068,lng:-74.08128680627823};
   var marker7 = new google.maps.Marker({
     position:markerSeven,
     map:map,
